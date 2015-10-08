@@ -24,6 +24,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+      <i class="fa fa-calculator">
+      </i>
+        Omnicalc
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav visible-xs visible-sm">
+            <li>
+              <a href="/wordcount/new">
+                <i class="fa fa-book"></i>
+                Word Count
+              </a>
+            </li>
+            <li>
+              <a href="/loan_payment/new">
+                  <i class="fa fa-money"></i>
+                  Loan Payment
+              </a>
+            </li>
+            <li>
+              <a href="/time_between/new">
+                  <i class="fa fa-clock-o"></i>
+                  Time Between
+              </a>
+            </li>
+            <li>
+              <a href="/descriptive_statistics/new">
+                  <i class="fa fa-bar-chart"></i>
+                  Descriptive Statistics
+              </a>
+            </li>
+    </div>
+</nav>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group">
+        <a href="/word_count/new" class="list-group-item">
+          <i class="fa fa-book">
+          </i>
+          Word Count
+        </a>
+        <a href="/loan_payment/new" class="list-group-item">
+          <i class="fa fa-clock-o">
+          </i>
+          Loan Payment
+        </a>
+        <a href="/time_between/new" class="list-group-item">
+          <i class="fa fa-money">
+          </i>
+          Time Between
+        </a>
+        <a href="/descriptive_statistics/new" class="list-group-item">
+          <i class="fa fa-bar-chart">
+          </i>
+          Descriptive Statistics
+        </a>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">New Descriptive Statistics Calculation
+          </h3>
+        </div>
+
+        <div class="panel-body">
+          <form action="/descriptive_statistics/results" class="form-horizontal">
+            <div class="form-group">
+              <label for="list_of_numbers" class="col-sm-2 control-label">Numbers</label>
+              <div class="col-sm-10">
+                <textarea name="list of numbers" class="form-control" rows="3" placeholder="Enter your numbers (separated by spaces)" id="list of numbers">
+                </textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
